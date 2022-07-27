@@ -17,7 +17,7 @@ describe('ListadoComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('debería crear listado', () => {
     expect(component).toBeTruthy();
   });
 });

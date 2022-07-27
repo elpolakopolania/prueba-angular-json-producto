@@ -1,34 +1,40 @@
-<p>listado works!</p>
-<h2>Productos Bloqueados</h2>
-<table>
+<div class=".content">
+  <p>listado</p>
+  <h2>Productos Bloqueados</h2>
+  <table>
     <thead>
-        <tr>
-            <th>id</th>
-            <td>Número</td>
-            <td>Estado</td>
+      <tr>
+        <th>id</th>
+        <td>Número</td>
+        <td>Estado</td>
+      </tr>
     </thead>
-    <tbody> 
-        <tr *ngFor="let producto of listadoProductosBloq">
-            <td>{{ producto.rowIdProducto }}</td>
-            <td>{{ producto.numProducto }}</td>
-            <td>{{ producto.estado }}</td>
-        </tr>
 
+    <tbody>
+      <tr *ngFor="let producto of listadoProductosBloq">
+        <td>{{ producto.rowIdProducto }}</td>
+        <td>{{ producto.numProducto }}</td>
+        <td>{{ producto.estado }}</td>
+      </tr>
     </tbody>
-</table>
-<h2>Activos</h2>
-<table>
+  </table>
+  <h2>Activos</h2>
+  <table>
     <thead>
-        <tr>
-            <th>id</th>
-            <td>Número</td>
-            <td>Estado</td>
+      <tr>
+        <th>id</th>
+        <td>Número</td>
+        <td>Estado</td>
+      </tr>
     </thead>
-    <tbody> 
-        <tr *ngFor="let producto of listadoProductosNoBloq">
-            <td>{{ producto.rowIdProducto }}</td>
-            <td>{{ producto.numProducto }}</td>
-            <td>{{ producto.estado }}</td>
-        </tr>
+
+    <tbody>
+      <tr *ngFor="let producto of listadoProductosNoBloq">
+        <td>{{ producto.rowIdProducto }}</td>
+        <td>{{ producto.numProducto }}</td>
+        <td>{{ producto.estado }}</td>
+      </tr>
     </tbody>
-</table>
+  </table>
+  <span>prueba-angular-json app is running!</span>
+</div>
