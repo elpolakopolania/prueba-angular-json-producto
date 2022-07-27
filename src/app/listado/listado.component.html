@@ -1,0 +1,34 @@
+<p>listado works!</p>
+<h2>Productos Bloqueados</h2>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <td>Número</td>
+            <td>Estado</td>
+    </thead>
+    <tbody> 
+        <tr *ngFor="let producto of listadoProductosBloq">
+            <td>{{ producto.rowIdProducto }}</td>
+            <td>{{ producto.numProducto }}</td>
+            <td>{{ producto.estado }}</td>
+        </tr>
+
+    </tbody>
+</table>
+<h2>Activos</h2>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <td>Número</td>
+            <td>Estado</td>
+    </thead>
+    <tbody> 
+        <tr *ngFor="let producto of listadoProductosNoBloq">
+            <td>{{ producto.rowIdProducto }}</td>
+            <td>{{ producto.numProducto }}</td>
+            <td>{{ producto.estado }}</td>
+        </tr>
+    </tbody>
+</table>
