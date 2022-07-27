@@ -17,7 +17,13 @@ describe('ListadoComponent', () => {
     fixture.detectChanges();
   });
 
-  it('debería crear listado', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it(`EL estado del primer registro de la variable listadoProductosBloq deberia ser 'Bloqueado'`, () => {
+    const app = fixture.componentInstance;
+    console.log('EL estado del primer...', app.listadoProductosBloq[0]['estado']);
+    expect(app.listadoProductosBloq[0]['estado']).toEqual('Bloqueado');
   });
 });
